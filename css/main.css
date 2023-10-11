@@ -165,7 +165,7 @@ img {
 
 a {
   text-decoration: none;
-  color: var(--color-gray-3);
+  color: var(--color-light-1);
   transition: all 0.2s ease-in-out;
 }
 a:hover, a:focus {
@@ -6826,7 +6826,7 @@ h1, .h1 {
   font-weight: 100;
   line-height: var(--h1-line-height);
   font-size: calc(var(--h1-min-font-size) * 1px);
-  color: var(--h1-color-dark);
+  color: var(--h1-color-light);
   letter-spacing: calc(var(--h1-letter-spacing) * 1px);
 }
 @media screen and (min-width: 320px) {
