@@ -8541,7 +8541,7 @@ select {
  * ======================================================================!*/
 .header {
   pointer-events: none;
-  padding-top: calc(var(--gutter-vertical) / 1.5);
+  padding-top: calc(var(--gutter-vertical) / 0.75);
 }
 .header a, .header select, .header input {
   pointer-events: initial;
