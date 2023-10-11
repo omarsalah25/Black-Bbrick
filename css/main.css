@@ -142,7 +142,7 @@ body {
   min-width: 320px;
   font-family: var(--font-primary);
   line-height: var(--paragraph-line-height);
-  color: var(--paragraph-color-dark);
+  color: var(--paragraph-color-light);
   font-size: 100%;
   word-wrap: break-word;
   overflow-wrap: anywhere;
@@ -207,7 +207,7 @@ a:hover {
 
 #page-wrapper {
   overflow-x: hidden;
-  background-color: #fff;
+  background-color: #000;
 }
 
 @media screen and (max-width: 991px) {
@@ -290,9 +290,9 @@ a:hover {
   --font-primary: "Inter", sans-serif;
   /* Dark Colors */
   --color-dark-1: #000000;
-  --color-dark-2: #181818;
-  --color-dark-3: #333333;
-  --color-dark-4: #555555;
+  --color-dark-2: #000000;
+  --color-dark-3: #000000;
+  --color-dark-4: #000000;
   /* Light Colors */
   --color-light-1: #ffffff;
   --color-light-2: #fafafa;
@@ -304,7 +304,7 @@ a:hover {
   --color-gray-4: #e8e8e8;
   /* Portfolio Projects Colors */
   --color-portfolio-1: #f1f6f6;
-  --color-portfolio-2: #262626;
+  --color-portfolio-2: #000000;
   --color-portfolio-3: #f6f6f1;
   --color-portfolio-4: #d7d7d9;
   --color-portfolio-5: #dededb;
@@ -6807,7 +6807,7 @@ h4, h5, h6 {
   font-weight: 100;
   line-height: var(--xl-line-height);
   font-size: calc(var(--xl-min-font-size) * 1px);
-  color: var(--xl-color-dark);
+  color: var(--xl-color-light);
   letter-spacing: calc(var(--xl-letter-spacing) * 1px);
 }
 @media screen and (min-width: 320px) {
