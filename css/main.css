@@ -9460,6 +9460,7 @@ select {
   }
 }
 @media screen and (min-width: 992px) and (min-width: 320px) {
+ 
   .section-fullscreen-columns__header {
     padding-top: calc(1 * (var(--distance-min-small) * 1px + (var(--distance-max-small) - var(--distance-min-small)) * ((100vw - 320px) / 1600)));
   }
@@ -9500,6 +9501,12 @@ select {
   height: calc(1 * (50 * 1px));
   flex-shrink: 0;
   margin-right: 1em;
+}
+@media screen and (max-width: 992px) and (min-width: 320px) {
+
+.header {
+  padding-top: calc(var(--gutter-vertical) / 1.8);
+}
 }
 @media screen and (min-width: 320px) {
   .section-list__counter {
