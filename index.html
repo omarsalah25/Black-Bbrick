@@ -65,7 +65,20 @@
             </div>
             <!-- - logo -->
             <!-- burger icon -->
-       
+            <div class="col-auto header__col d-flex align-items-center">
+              <div class="ms-auto header__burger" id="js-burger" data-arts-cursor="data-arts-cursor" data-arts-cursor-scale="1.7" data-arts-cursor-magnetic="data-arts-cursor-magnetic" data-arts-cursor-hide-native="true">
+                <div class="header__burger-line"></div>
+                <div class="header__burger-line"></div>
+                <!-- burger labels -->
+                <div class="header__label header__burger-label">
+                  <div class="header__label-burger header__label-burger_inner header__label-burger_closed-open">Menu</div>
+                  <div class="header__label-burger header__label-burger_inner header__label-burger_closed-hover">Open</div>
+                  <div class="header__label-burger header__label-burger_inner header__label-burger_opened-open">Close</div>
+                  <div class="header__label-burger header__label-burger_inner header__label-burger_opened-hover">Close</div>
+                </div>
+                <!-- - burger labels -->
+              </div>
+            </div>
             <!-- - burger icon -->
             <!-- "back" button for submenu nav -->
             <div class="header__overlay-menu-back" id="js-submenu-back" data-arts-cursor="data-arts-cursor" data-arts-cursor-scale="1.7" data-arts-cursor-magnetic="data-arts-cursor-magnetic" data-arts-cursor-hide-native="true"><i class="material-icons">arrow_back</i>
@@ -82,18 +95,42 @@
         </div>
         <!-- - top bar -->
         <!-- fullscreen overlay container -->
-        <!-- <div class="header__wrapper-overlay-menu" data-arts-theme-text="light">
+        <div class="header__wrapper-overlay-menu" data-arts-theme-text="light">
           <div class="mask-reveal w-100 h-100">
             <div class="mask-reveal__layer mask-reveal__layer-1 bg-dark-1">
               <div class="mask-reveal__layer mask-reveal__layer-2">
-                <div class="row align-items-center h-100"> -->
+                <div class="row align-items-center h-100">
                   <!-- menu & bottom widgets -->
-                  <!-- <div class="header__menu-column col-lg-7 order-lg-2 h-100 d-flex flex-column position-relative bg-dark-2"> -->
+                  <div class="header__menu-column col-lg-7 order-lg-2 h-100 d-flex flex-column position-relative bg-dark-2">
                     <!-- top gradient-->
-                    <!-- <div class="header__menu-gradient header__menu-gradient_top"></div> -->
+                    <div class="header__menu-gradient header__menu-gradient_top"></div>
                     <!-- - top gradient-->
                     <!-- virtual scrolling container -->
-                 
+                    <div class="header__scroll-container js-header-smooth-scroll-container overflow pointer-events-auto">
+                      <div class="header__wrapper-menu">
+                        <ul class="menu-overlay js-menu-overlay">
+                          <li class="menu-item-has-children"><a href="/index.html#aboutUs" data-pjax-link="overlayMenu">
+                              <div class="menu-overlay__item-wrapper arts-split-text js-arts-split-text" data-arts-split-text="lines,words" data-arts-split-text-set="lines" data-arts-split-text-overflow-wrap="lines"><span class="menu-overlay__subheading small mb-1">01&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;About Us </span>
+                                <div class="menu-overlay__heading h2">About Us</div>
+                              </div></a>
+                            
+                          </li>             
+                          <li class="menu-item-has-children"><a href="/index.html#ourServices" data-pjax-link="overlayMenu">
+                            <div class="menu-overlay__item-wrapper arts-split-text js-arts-split-text" data-arts-split-text="lines,words" data-arts-split-text-set="lines" data-arts-split-text-overflow-wrap="lines"><span class="menu-overlay__subheading small mb-1">02&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp; Services </span>
+                              <div class="menu-overlay__heading h2">Our Services</div>
+                            </div></a>
+                          
+                        </li>        
+                        
+                        <li class="menu-item-has-children"><a href="/contact.html" data-pjax-link="overlayMenu">
+                          <div class="menu-overlay__item-wrapper arts-split-text js-arts-split-text" data-arts-split-text="lines,words" data-arts-split-text-set="lines" data-arts-split-text-overflow-wrap="lines"><span class="menu-overlay__subheading small mb-1">02&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp; Contact Us </span>
+                            <div class="menu-overlay__heading h2">Contact Us</div>
+                          </div></a>
+                        
+                      </li>    
+                        </ul>
+                      </div>
+                    </div>
                     <!-- - virtual scrolling container -->
                     <!-- bottom gradient-->
                     <div class="header__menu-gradient header__menu-gradient_bottom"></div>
@@ -150,7 +187,7 @@
           <!-- - section MASTHEAD -->
           <section class="section bg-portfolio-2" data-arts-theme-text="light">
             <!-- section CONTENT -->
-            <div class="section ">
+            <div class="section pb-5 " id="aboutUs">
               <div class="container">
                 <div class="row row-wide justify-content-between">
                   <div class="col-lg-7 col-wide">
@@ -216,54 +253,54 @@
             <!-- - section CONTENT -->
             <!-- section PROPERTIES -->
 
-            <!-- <section class="section section-properties section-list section-content bg-portfolio-2 pb-large" data-arts-theme-text="light">
-              <div class="container" data-arts-os-animation="true" data-arts-os-animation-name="animateText">
-                <div class="row gy-lg-0 gy-3">
-                  <div class="col-lg-3 col-sm-6">
-                    <div class="section-list__content content js-arts-split-text arts-split-text" data-arts-split-text="lines" data-arts-split-text-set="lines" data-arts-split-text-overflow-wrap="lines">
-                      <div class="h6">Audio Formats</div>
-                      <ul class="ps-0">
-                        <li>HE-AAC (V1)</li>
-                        <li>AAC (16 to 320 Kbps)</li>
-                        <li>Protected AAC</li>
-                        <li>MP3 (16 to 320 Kbps)</li>
-                      </ul>
-                    </div>
+            <div class="section py-5 " id="ourServices">
+              <div class="container">
+                <div class="row row-wide justify-content-between">
+                  <div class="col-lg-7 col-wide">
+                    <section class="section section-content">
+                      <div class="section-content__content content js-arts-split-text arts-split-text" data-arts-os-animation="true" data-arts-os-animation-name="animateText" data-arts-split-text="lines" data-arts-split-text-set="lines" data-arts-split-text-overflow-wrap="lines">
+                        <h2 class="h2 mb-lg-0 mb-3">Our Services</h2>
+                      
+                      </div>
+                    </section>
                   </div>
-                  <div class="col-lg-3 col-sm-6">
-                    <div class="section-list__content content js-arts-split-text arts-split-text" data-arts-split-text="lines" data-arts-split-text-set="lines" data-arts-split-text-overflow-wrap="lines">
-                      <div class="h6">Sound</div>
-                      <ul class="ps-0">
-                        <li>7 Speakers</li>
-                        <li>1 Subwoofer</li>
-                        <li>6 Microphones</li>
-                        <li>Audio Beamforming</li>
-                        <li>50 W Output</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-sm-6">
-                    <div class="section-list__content content js-arts-split-text arts-split-text" data-arts-split-text="lines" data-arts-split-text-set="lines" data-arts-split-text-overflow-wrap="lines">
-                      <div class="h6">Connection</div>
-                      <ul class="ps-0">
-                        <li>802.11ac Wi-Fi with MIMO</li>
-                        <li>Direct Guest Access</li>
-                        <li>Bluetooth 5.0</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-sm-6">
-                    <div class="section-list__content content js-arts-split-text arts-split-text" data-arts-split-text="lines" data-arts-split-text-set="lines" data-arts-split-text-overflow-wrap="lines">
-                      <div class="h6">Developers</div>
-                      <ul class="ps-0">
-                        <li>Voice Control</li>
-                        <li>Touch Screen Control</li>
-                      </ul>
-                    </div>
+                  <div class="col-lg-12 col-wide">
+                    <section class="section section-content">
+                      <div class="section-content__content content js-arts-split-text arts-split-text" data-arts-os-animation="true" data-arts-os-animation-name="animateText" data-arts-split-text="lines" data-arts-split-text-set="lines" data-arts-split-text-overflow-wrap="lines">
+                        <p>
+                          
+                          <p>Imagine a world where every door opens to new adventures, where each room tells a unique story, and where a house is more than just walls and a roof—it’s
+                            a canvas waiting for your personal masterpiece. That’s the world we help you explore and create at Black Brick.</p>
+
+                           <p> Our team of real estate visionaries isn’t in the business of selling properties; we’re in the business of crafting dreams. We curate a collection of homes
+                           that aren’t just places to live; they’re stages for your life’s most unforgettable moments.</p>
+
+                         
+                           <p> At Black Brick, we’re storytellers, matchmakers, and architects of your future. Whether you’re searching for the cozy nest where your family
+                           will grow, the penthouse with a skyline view that takes your breath away, or the investment that paves the way to your financial future, we’re 
+                           here to turn your aspirations into reality.</p>
+
+                         
+                           <p> But it doesn't stop there. We extend our passion for crafting exceptional spaces to the world of retail and offices as well. Just as with our residential
+                           properties, we approach commercial real estate as an opportunity to create environments where your business can flourish and where each space is a canvas 
+                           for success. Like our residential properties, our retail and office spaces are designed to tell stories, make connections, and be the backdrop for memorable
+                            moments in your professional journey. Whether you seek a vibrant retail location to showcase your brand or a dynamic office space to inspire innovation,
+                             Black Brick is your partner in crafting dreams, not just in the realm of home, but in your workspace too.</p>
+
+                         
+                             <p> Our secret? It’s not just about knowing the market;
+                           it’s about understanding you. We believe that real estate is as much about finding the perfect fit 
+                           for your lifestyle as it is about the right price. It’s about forging connections, nurturing dreams,
+                            and creating spaces where memories are born.</p>
+
+                         
+                                                          </p>
+                      </div>
+                    </section>
                   </div>
                 </div>
               </div>
-            </section> -->
+            </div>
       
             <!-- - section PROPERTIES -->
 
