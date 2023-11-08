@@ -10399,3 +10399,21 @@ select {
 .widget_text .textwidget > *:last-child {
   margin-bottom: 0;
 }
+
+
+.S-title{
+      color: var(--h3-color-light);
+      text-transform: uppercase;
+      font-weight: 500;
+      margin-bottom: 5px;
+      font-size: 33px;
+      line-height: 36px;
+}
+
+.S-Dec{
+  color: #666666;
+    font-family: Oswald, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 18px;
+    line-height: 23px;
+    font-weight: 200;
+}
