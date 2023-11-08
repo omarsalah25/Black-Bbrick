@@ -7169,7 +7169,7 @@ small, .small, .comment-edit-link, .comment-reply-link, .comment-metadata, .slid
 
 .of-cover {
   width: 100% !important;
-  height: 100% !important;
+  height: 80% !important;
   -o-object-fit: cover;
      object-fit: cover;
   font-family: "object-fit: cover;";
