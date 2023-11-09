@@ -346,14 +346,14 @@
 			scope
 		});
 
-		if ($formContact.length) {
-			$formContact.each(function () {
-				new FormAJAX({
-					target: $(this),
-					scope
-				});
-			});
-		}
+		// if ($formContact.length) {
+		// 	$formContact.each(function () {
+		// 		new FormAJAX({
+		// 			target: $(this),
+		// 			scope
+		// 		});
+		// 	});
+		// }
 
 		if ($googleMap.length) {
 			AssetsManager
