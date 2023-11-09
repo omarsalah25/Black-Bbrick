@@ -5,7 +5,7 @@ require 'form_setting.php';
 if(isset($_POST)){
 	$name = $_POST['name'];
 	$email = $_POST['email'];
-	$message = $_POST['msg'];
+	$message = $_POST['message'];
 
 
 $messages = '<html><body style="background-color:#000; min-width:50%; text-align:center; color:#b99272";>';
@@ -13,7 +13,7 @@ $messages .='<div style="widht:100%; text-align:center; margin:20px 0 ;"><h1>New
 $messages .= '<table rules="all" style="border-color: #666; min-width:100%; text-align:center; color:#b99272"; cellpadding="20">';
 $messages .= "<tr style=''><td><strong>Name:</strong> </td><td>" . strip_tags($_POST['name']) . "</td></tr>";
 $messages .= "<tr><td><strong>Email:</strong> </td><td>" . strip_tags($_POST['email']) . "</td></tr>";
-$messages .= "<tr><td><strong>Message:</strong> </td><td>" . htmlentities($_POST['msg']) . "</td></tr>";
+$messages .= "<tr><td><strong>Message:</strong> </td><td>" . htmlentities($_POST['message']) . "</td></tr>";
 $messages .= "</table>";
 $messages .= "</body></html>";
 

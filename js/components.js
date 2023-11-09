@@ -9570,16 +9570,10 @@
 
 
 
-	if ($('.sendform-form').length) {
+	if ($('.sendform').length) {
 		$('#cform').validate({
 			rules: {
 				name: {
-					required: true
-				},
-				tel: {
-					required: true
-				},
-				subject: {
 					required: true
 				},
 				message: {
@@ -9593,10 +9587,10 @@
 			success: 'valid',
 			submitHandler: function () {
 				$.ajax({
-					url: 'mailer/feedback.php',
+					url: '/mailer/feedback.php',
 					type: 'post',
 					dataType: 'json',
-					data: 'name=' + $("#cform").find('input[name="name"]').val() + '&email=' + $("#cform").find('input[name="email"]').val() + '&message=' + $("#cform").find('textarea[name="msg"]').val(),
+					data: 'name=' + $("#cform").find('input[name="name"]').val() + '&email=' + $("#cform").find('input[name="email"]').val() + '&message=' + $("#cform").find('textarea[name="message"]').val(),
 					beforeSend: function () {
 
 					},
